@@ -1,0 +1,897 @@
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@900&family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,300;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Squada+One&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BRIAN JEAN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <style>
+        .body {}
+
+
+
+        /* Background color of the navbar */
+        .navbar {
+            background-color: #A5798D;
+        }
+
+        /* Logo styling */
+        .navbar-brand {
+            color: #704d5d;
+            font-size: 20pt;
+            font-family: 'Bebas Neue';
+        }
+
+        /* Handles the background color and border of the hammburger*/
+        .navbar-toggler {
+            background-color: #fdddc8;
+            border: 1px solid #704d5d;
+        }
+
+        /* Most annoying - this handles the lines of the hamburger.
+        Gotta change the rgba(255,0,0, 1) to your color.  It is (red,green,blue,transparency).
+        You can also change the look of it with the other settings.
+        */
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(112, 77, 93, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .dropdown-menu {
+            left: auto;
+            right: -1em;
+            text-align: right;
+            margin: 20px 0px;
+            padding: 0px 0px 0px 0px;
+            background-color: #A5798D;
+            color: #704d5d;
+            border: none;
+        }
+
+        .dropdown-header {
+            color: #d7dce4;
+            font-family: 'Lato', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .dropdown-item {
+            font-family: 'Roboto', sans-serif;
+            text-transform: none;
+            color: #704d5d;
+        }
+
+        .workbtn {
+            color: #704d5d;
+            background-color: #F4A9A8;
+            padding: 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .collapse {
+            left: auto;
+            right: -1em;
+            text-align: right;
+            margin: 20px 0px;
+            padding: 0px 0px 0px 300px;
+        }
+
+        .altnavitem {
+            display: none;
+        }
+
+        .ctcnnavitem {
+
+            color: #d7dce4;
+            font-family: 'Lato', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .nav-link {
+            color: #d7dce4;
+            font-family: 'Lato', sans-serif;
+            text-transform: uppercase;
+        }
+
+
+
+
+
+
+
+        .bodybody {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #F4A9A8;
+        }
+
+        .mesection {
+            margin: 30px auto;
+            color: #674C58;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #F4A9A8;
+            padding: 10px;
+            0px;
+        }
+
+        .medescription {
+            max-width: 1200px;
+            margin: 10px 15px 0px 15px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: #674C58;
+        }
+
+        .meselfie {
+            width: 100%;
+            border: 0px solid red;
+            text-align: center;
+        }
+
+        .container-md {
+            max-width: 1200px;
+            padding: 10px;
+            0px;
+        }
+
+        .designsec {
+            border: 0px solid black;
+            text-align: center;
+            margin: 0px 0px 0px 0px;
+            padding: 0px auto;
+            background-color: #FDF4E3;
+            max-width: 1200px;
+            margin: 0 auto;
+
+
+        }
+
+        .illustrationsec {
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 0px solid lime;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #F4A9A8;
+
+        }
+
+        .designsecimg {
+            width: 100%;
+            border: 0px solid red;
+
+        }
+
+        .illsecimg {
+            width: 100%;
+            border: 0px solid white;
+        }
+
+        .imgimg {
+            width: 100%;
+            padding: 10px 20px 10px 20px;
+        }
+
+
+        .projectnametxt {
+            font-size: 15pt;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+
+        }
+
+        .footercontainer {
+            border: 0px solid maroon;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        .namebio {
+            background-color: #AFB9C8;
+            text-align: left;
+            padding: 20px 20px 10px 20px;
+            color: #464A50;
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        .navigation {
+            background-color: #AFB9C8;
+            text-align: left;
+            padding: 10px 20px 10px 20px;
+            border: 0px solid darkblue;
+            color: #464A50;
+        }
+
+        .contact {
+            background-color: #AFB9C8;
+            text-align: left;
+            padding: 10px 20px 10px 20px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            color: #464A50;
+            text-align: left;
+        }
+
+        .sclimg {
+            width: 20%;
+            text-decoration: none;
+        }
+
+
+
+
+        .ftrlistitms {
+            list-style: none;
+            padding: 0px 0px 0px 0px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 200;
+        }
+
+        .footercontainer ul li a:link {
+            color: #704d5d;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .footercontainer ul li a:visited {
+            color: #464A50;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .footercontainer ul li a:hover {
+            color: pink;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .footercontainer ul li a:active {
+            color: blue;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+
+
+        .designsec a:link {
+            color: #704d5d;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .designsec a:visited {
+            color: #AFB9C8;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .designsec a:hover {
+            color: #bd809b;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .designsec a:active {
+            color: blue;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .illustrationsec a:link {
+            color: #704d5d;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+
+
+
+        .illustrationsec a:visited {
+            color: #AFB9C8;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .illustrationsec a:hover {
+            color: #bd809b;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+
+        .illustrationsec a:active {
+            color: blue;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+
+        .ftrp {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            list-style: none;
+            font-weight: 200;
+        }
+
+        .iconname2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            color: #464A50;
+        }
+
+
+        .dsnbtncontainer {
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 0px solid black;
+            padding: 0px 0px 20px 0px;
+            background-color: #FDF4E3;
+        }
+
+        .illbtncontainer {
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 0px solid black;
+            padding: 0px 0px 20px 0px;
+            background-color: #F4A9A8;
+
+        }
+
+        .projectdescription {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            color: #674C58;
+        }
+
+        .container-md {
+            background-color: #F4A9A8;
+        }
+
+        .btn-outline {
+
+            color: #704d5d;
+            border-color: #704d5d;
+        }
+
+        .btn-outline:active {
+            color: red;
+            border-color: red;
+        }
+
+        .btn-outline:hover {
+            color: #A5798D;
+            border-color: maroon;
+            background-color: #fff;
+        }
+
+        .btn-outline:focus {
+            color: black;
+            border-color: slategray;
+        }
+
+        .socialicons {
+            display: flex;
+
+
+        }
+
+        .sclimgig {
+            flex: 1;
+            border: 0px solid white;
+            text-decoration: none;
+
+        }
+
+        .sclimgpint {
+            flex: 1;
+            border: 0px solid red;
+
+        }
+
+        .sclimglinkn {
+            flex: 1;
+            border: 0px solid blue;
+        }
+
+
+
+
+
+
+
+
+
+
+        @media only screen and (min-width:960px) {
+
+            .dropdown-menu {
+                position: absolute;
+            }
+
+
+            .navbbar {}
+
+            .container-fluid {
+                position: relative;
+                display: flex;
+                border: 0px solid orange;
+                column-gap: 10px;
+
+            }
+
+            .navbar-brand {
+                flex: 1;
+            }
+
+            .altnavitem {
+                list-style: none;
+                flex: 1;
+                display: inline;
+                color: #d7dce4;
+                font-family: 'Lato', sans-serif;
+                text-transform: uppercase;
+                justify-content: flex-start;
+            }
+
+            .ctcnnavitem {
+                display: none;
+            }
+
+
+            .ctcbox {
+                border: 0px solid skyblue;
+                flex: 1;
+                text-align: right;
+                display: flex;
+                column-gap: 10px;
+                justify-content: flex-end;
+            }
+
+            .dropdown-menu {
+                margin: 20px 0px 0px 400px;
+            }
+
+
+
+            .designsec {
+                display: flex;
+                text-align: center;
+                padding: 0px 0px;
+            }
+
+            .designsecimg {
+                flex: 1;
+                width: 100%;
+            }
+
+            .illustrationsec {
+                display: flex;
+                text-align: center;
+                padding: 50px 0px;
+            }
+
+            .illsecimg {
+                flex: 1;
+                width: 100%;
+            }
+
+
+            .body {
+                background-color: #FDF4E3;
+            }
+
+            .mesection {
+                display: flex;
+            }
+
+            .meselfie {
+                text-align: right;
+            }
+
+            .medescription {
+                padding: 0px 160px 0px 0px;
+            }
+
+
+            section article {
+                flex: 1;
+            }
+
+            section aside {
+                flex: 2;
+            }
+
+            .footercontainer {
+                display: flex;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .namebio {
+                flex: 1;
+            }
+
+            .navigation {
+                flex: 1;
+            }
+
+            .contact {
+                flex: 1;
+            }
+
+            .sclimg {
+                width: 20%;
+            }
+
+            .socialicons {
+                display: flex;
+
+            }
+
+            .sclimgig {
+                flex: 1;
+            }
+
+            .sclimgpint {
+                flex: 1;
+            }
+
+            .sclimglinkn {
+                flex: 1;
+            }
+
+
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://bjeansdesign.com/"> Brian Jean </a>
+
+
+            <div class="ctcbox">
+                <div>
+                    <li class="altnavitem">
+                        <a class="nav-link" href="https://bjeansdesign.com/about"> About </a>
+                    </li>
+                </div>
+                <div>
+
+                    <li class="altnavitem">
+                        <a class="nav-link" href="https://bjeansdesign.com/contact"> Contact </a>
+                    </li>
+
+                </div>
+            </div>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+
+                    <li class="nav-item">
+                        <button class="workbtn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Work
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-info dropdown-menu-right ">
+                            <li>
+                                <h6 class="dropdown-header">
+                                    Graphic Design</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Branding</a></li>
+                            <li><a class="dropdown-item" href="#">Editorial </a></li>
+                            <li>
+                                <h6 class="dropdown-header"> Illustration </h6>
+                            </li>
+                            <li><a class="dropdown-item" href="#">White Board Series</a></li>
+                            <li><a class="dropdown-item" href="#">Mythical </a></li>
+                            <li><a class="dropdown-item" href="#">LGBTQ+</a></li>
+                            <li><a class="dropdown-item" href="#">Digital</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li class="ctcnnavitem">
+                        <a class="nav-link" href="#"> About </a>
+                    </li>
+
+                    <li class="ctcnnavitem">
+                        <a class="nav-link" href="#"> Contact </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="mesection">
+
+        <article class="meselfie">
+
+            <img class="img-responsive col-lg-4" src="IMGS/meselfie.png" />
+
+
+        </article>
+
+        <aside class="medescription">
+
+            I am a graphic designer who creates powerful visual systems. A solution chaser inspired by the elements of leading contemporary design projects. Seeking to improve people’s understanding of design one brand identity at a time. I also illustrate out of enjoyment.
+
+        </aside>
+
+    </section>
+
+
+
+
+    <div class="container-md">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <img src="IMGS/faebae.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMGS/bmyffapp.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMGS/heartpostsketch.png" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="IMGS/kesha.png" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="IMGS/indierockspread.png" class="d-block w-100" alt="...">
+
+                </div>
+
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <article class="designsec">
+
+        <div class="designsecimg">
+
+            <img src="IMGS/BMYFF.png" class="imgimg">
+
+            <br>
+
+            <div>
+
+                <a href="https://bjeansdesign.com/bmyff" class=" projectnametxt">BMYFF</a>
+
+            </div>
+
+            <div class="projectdescription">
+
+                Identity System Design
+
+            </div>
+
+        </div>
+
+        <div class="designsecimg">
+
+            <img src="IMGS/THGTHG.png" class="imgimg">
+
+            <br>
+
+            <div>
+
+                <a href="https://bjeansdesign.com/hunger-games" class=" projectnametxt">The Hunger Games </a>
+
+            </div>
+
+            <div class="projectdescription">
+
+                Book Cover Jacket
+
+            </div>
+
+        </div>
+
+        <br>
+
+    </article>
+
+    <div class="dsnbtncontainer">
+
+
+
+        <a href="https://bjeansdesign.com/" class="btn btn-outline" role="button"> > More Design Projects > </a>
+
+    </div>
+
+
+    <article class="illustrationsec">
+
+        <div class="illsecimg">
+
+
+            <a href="mermerfaefae.png" data-toggle="lightbox" data-caption=" Such a betrayal in mythical aviation, or is it? ">
+
+                <img src="IMGS/Merfairy.png" class="imgimg">
+            </a>
+
+            <br>
+
+            <a href="https://www.instagram.com/crimsloo/?hl=en" class=" projectnametxt"> Merfairy Transformation </a>
+
+            <br>
+
+            <div class="projectdescription">
+
+                Mythical Illustration
+
+            </div>
+
+        </div>
+
+        <div class="illsecimg">
+
+            <a href="IMGS/picniclrg.JPG" data-toggle="lightbox" data-caption=" I bet you can't tell which girlfriend is more excited for the picnic date?! ">
+
+                <img src="IMGS/Picnic.png" class="imgimg">
+            </a>
+            <br>
+
+            <a href="https://www.instagram.com/crimsloo/?hl=en" class=" projectnametxt"> Picnic Couple </a>
+
+            <br>
+
+            <div class="projectdescription">
+
+                Girlfriends' Core
+
+            </div>
+
+        </div>
+
+        <br>
+
+    </article>
+
+    <div class="illbtncontainer">
+
+
+
+        <a href="https://www.instagram.com/crimsloo/?hl=en" class="btn btn-outline" role="button"> > More Illustrations > </a>
+
+    </div>
+
+
+
+    <div class="footercontainer">
+
+        <section class="namebio">
+
+            <h3 class="iconname"> Brian Jean </h3>
+
+            <p class="ftrp">
+
+                I am a graphic designer who creates powerful visual systems. I am an illustrator who draws out of passion.
+
+            </p>
+
+        </section>
+
+        <section class="navigation">
+
+            <h5 class="iconname2"> Navigation </h5>
+
+            <div class="ftrp">
+
+                <ul class="ftrlistitms">
+                    <li><a href="cakes.html">Home</a></li>
+                    <li><a href="https://bjeansdesign.com/">Graphic Design </a></li>
+                    <li><a href="https://www.instagram.com/crimsloo/?hl=en"> Illustration </a></li>
+                    <li><a href="https://bjeansdesign.com/contact"> Contact </a></li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="contact">
+
+            <h5 class="iconname2"> Contact </h5>
+
+            <div class="ftrp">
+
+                Brooklyn, NY
+
+                <ul class="ftrlistitms">
+                    <li>
+                        <a href="https://outlook.office.com/mail/deeplink/compose/?mailtouri=mailto%3abjean22%40bjeansdesign.com%3fcc%3dbjean2%2540mercy.edu"> bjean22@bjeansdesign.com </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class=socialicons>
+
+                <aside class=sclimgig>
+
+                    <a href=https://www.instagram.com/crimsloo/?hl=en>
+                        <img src="IMGS/sclimgig.png" class="sclimg" /></a>
+
+                    <a href=https://www.pinterest.com/bjreiaann>
+
+                        <img src="IMGS/sclimgpint.png" class="sclimg" /></a>
+
+                    <a href=https://www.linkedin.com/notifications/?filter=all>
+                        <img src="IMGS/sclimglinkn.png" class="sclimg" /></a>
+
+                </aside>
+
+                <aside class=sclimgpint>
+
+
+
+                </aside>
+
+                <aside class=sclimglinkn>
+
+
+
+                </aside>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+</body>
+
+</html>
